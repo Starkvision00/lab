@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form method="post">
+Roll: <input name="r" required><br>
+Name: <input name="n" required><br>
+Age: <input type="number" name="a" required><br>
+<button>Submit</button>
+</form>
+
+<?php
+if($_POST){
+ $c=new mysqli("localhost","root","","stdu");
+ if($c->connect_error) die("DB Error");
+ $c->query("INSERT INTO student(rollno,name,age) VALUES({$_POST['r']},'{$_POST['n']}',{$_POST['a']})")
+ ? print "Inserted!" : print "Error!";
+ $c->close();
+}
+?>
+</body>
+</html>
