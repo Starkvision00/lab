@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Resume</title>
+</head>
+<body style="font-family:Arial;background:#f4f4f4;">
+ <div style="width:60%;margin:30px auto;padding:20px;background:#fff;
+ border:2px solid #007BFF;border-radius:10px;position:relative;">
+  
+  <img src="Dhoni-2011.webp" style="width:80px;height:80px;border-radius:50%;
+  border:2px solid #007BFF;position:absolute;top:20px;right:20px;">
+  
+  <h1 style="text-align:center;color:#007BFF;border-bottom:2px solid #007BFF;">
+   Resume
+  </h1>
+  
+  <p><b>Name:</b> Vijay</p>
+  <p><b>Email:</b> <a href="#">vijay@gmail.com</a></p>
+  <p><b>Address:</b> Trichy</p>
+
+  <h2>Skills</h2>
+  <ul>
+   <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li>
+  </ul>
+
+  <h2>Experience</h2>
+  <p><b>Junior Developer, XYZ</b> (2021–2024)</p>
+  <ul>
+   <li>Developed applications</li>
+   <li>Worked with designers</li>
+  </ul>
+  <p><b>Web Developer, XYZ</b> (2024–Present)</p>
+  <ul>
+   <li>Built web apps with JavaScript frameworks</li>
+   <li>Provided technical support</li>
+  </ul>
+
+  <h2>Education</h2>
+  <ul>
+   <li><b>B.Sc Computer Science</b>, Jamal College (2021–2024)</li>
+   <li><b>M.Sc Computer Science</b>, Jamal College (2024–2026)</li>
+  </ul>
+ </div>
+</body>
+</html>
