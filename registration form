@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <h3>Register</h3>
+ <form onsubmit="return reg(this)">
+  Username: <input id="u"><span id="ue"></span><br><br>
+  Password: <input type="password" id="p"><span id="pe"></span><br><br>
+  <button>Register</button>
+ </form>
+
+ <script>
+  function reg(f){
+    let u=u=document.getElementById("u").value.trim(),
+        p=document.getElementById("p").value,
+        ue=document.getElementById("ue"),
+        pe=document.getElementById("pe");
+    ue.textContent=pe.textContent="";
+    if(!u){ue.textContent=" Username required";return false;}
+    if(!p){pe.textContent=" Password required";return false;}
+    if(p.length<6){pe.textContent=" Min 6 chars";return false;}
+    alert("Registered successfully");f.reset();return false;
+  }
+ </script>
+</body>
+</html>
