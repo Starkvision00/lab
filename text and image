@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Simple Page</title>
+</head>
+<body>
+ <h1>Welcome to my world</h1>
+ <p>Sample webpage</p>
+ <b>Bold</b> <i>Italic</i> <u>Underline</u>
+
+ <p>List:</p>
+ <ul>
+  <li>Item 1</li><li>Item 2</li><li>Item 3</li>
+ </ul>
+
+ <p>Image:</p>
+ <img src="1.jpg" width="300" height="150" alt="Landscape">
+
+ <div id="msg" style="display:none;color:green;">
+  Hi, welcome to Jamal Mohamed College!
+ </div>
+ <button onclick="document.getElementById('msg').style.display='block'">
+  Show Message
+ </button>
+</body>
+</html>
