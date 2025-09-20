@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Get Text Box Value</title>
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+Name: <input id="n"><br>
+Roll No: <input id="r"><br>
+<button id="g">Get Value</button>
+
+<script>
+$(function(){
+ $("#g").click(()=>{
+  alert("Name: "+$("#n").val());
+  alert("Roll No: "+$("#r").val());
+ });
+});
+</script>
+</body>
+</html>
