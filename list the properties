@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Object Properties</title></head>
+<body>
+ <h1>Object Properties</h1>
+ <table border="1">
+  <tr><th>Property</th><th>Value</th></tr>
+  <tbody id="props"></tbody>
+ </table>
+
+ <script>
+  const person={name:"Vijay",age:21,occupation:"Web Developer"};
+  const tbody=document.getElementById("props");
+  for(let key in person){
+    let row=`<tr><td>${key}</td><td>${person[key]}</td></tr>`;
+    tbody.innerHTML+=row;
+  }
+ </script>
+</body>
+</html>
