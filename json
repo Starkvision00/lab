@@ -1,0 +1,27 @@
+php
+
+<?php
+if($_POST){
+ $p=(object)[
+  "name"=>$_POST['name'],
+  "age"=>$_POST['age'],
+  "city"=>$_POST['city']
+ ];
+ echo "<h3>JSON Result:</h3><pre>".json_encode($p)."</pre>";
+}
+?>
+
+html
+
+<!DOCTYPE html>
+<html>
+<body>
+<h3>PHP Object → JSON</h3>
+<form action="convert.php" method="post">
+ Name: <input name="name" required><br>
+ Age: <input type="number" name="age" required><br>
+ City: <input name="city" required><br>
+ <button>Convert</button>
+</form>
+</body>
+</html>
