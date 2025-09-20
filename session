@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Session Info</h3>
+<?php
+session_start();
+$_SESSION['ID']=session_id();
+$_SESSION['CREATION_TIME']??=$_SESSION['CREATION_TIME']??time();
+$_SESSION['LAST_ACCESS_TIME']=time();
+echo "SESSION ID: ".$_SESSION['ID']."<br>";
+echo "CREATION TIME: ".date('Y-m-d H:i:s',$_SESSION['CREATION_TIME'])."<br>";
+echo "LAST ACCESS: ".date('Y-m-d H:i:s',$_SESSION['LAST_ACCESS_TIME']);
+?>
+</body>
+</html>
